@@ -26,8 +26,6 @@ const outputparser = StructuredOutputParser.fromZodSchema(
     })
 )
 
-
-
 const chain = prompt.pipe(model).pipe(outputparser);
 
 const response = await chain.invoke(
