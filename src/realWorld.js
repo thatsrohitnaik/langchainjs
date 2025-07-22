@@ -1,5 +1,5 @@
 import {modelGemini as model} from "./model/index.js";
-import {promptQA as prompt} from "./prompt/index";
+import {promptQA as prompt} from "./prompt/index.js";
 import {createStuffDocumentsChain} from "langchain/chains/combine_documents";
 import {getWebDoc} from "./doc/index.js";
 

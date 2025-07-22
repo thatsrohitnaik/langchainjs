@@ -1,5 +1,5 @@
-import  { modelGemini as model} from "./model/index.js";
-import {promptNutritionist as prompt} from "./prompt/index";
+import {modelGemini as model} from "./model/index.js";
+import {promptNutritionist as prompt} from "./prompt/index.js";
 import {getStringParser} from "./parser/index.js";
 
 const chain = prompt.pipe(model).pipe(getStringParser());

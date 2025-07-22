@@ -7,7 +7,7 @@ const chain = prompt.pipe(model).pipe(getUserParser());
 const response = await chain.invoke(
     {
         phrase: "Rohit is 24 years old, i an alternate universe",
-        format_instruction: outputparser.getFormatInstructions()
+        format_instruction: getUserParser().getFormatInstructions()
     })
 
 console.log(response)

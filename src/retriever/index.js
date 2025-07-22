@@ -1,4 +1,4 @@
 
-export const getRetriever = async(vectorStore) => {
+export const getRetriever = (vectorStore) => {
     return vectorStore.asRetriever({k:2})
 }

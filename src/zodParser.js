@@ -7,7 +7,7 @@ const chain = prompt.pipe(model).pipe(getMovieParser());
 const response = await chain.invoke(
     {
         phrase: "In the movie Star Wars, important characters are Luke, Liea, Yoda, Han, Dart",
-        format_instruction: outputparser.getFormatInstructions()
+        format_instruction: getMovieParser().getFormatInstructions()
     })
 
 console.log(response)
